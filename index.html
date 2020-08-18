@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="font4.7/css/font-awesome.css" type="text/css">
+
+  <title> Todo List</title>
+</head>
+<body class="bg-dark">
+  
+  <div class="container">
+    <div class="row">
+      
+        <div class="col-md-4 mx-auto mt-6" style = "padding:2em;">
+          <div class="content p-2" style="background:black; border-radius:10px;">
+              <h3 align='center' style = "color:white">Task List</h3>
+              <div class="form-content">
+                <form id="form">
+                  <h4 style = "color:white">Task</h4>
+                  <div class="form-group">
+                    <label for="task" style = "color:white">Enter New Task</label>
+                    <input type="text" class="form-control" id="task">
+                  </div>
+                  <input type="submit" class="btn btn-primary" value="Add Task">
+                </form>
+              </div>
+              <hr>
+              <div class="list-content">
+                <h4 style = "color:white">Task List</h4>
+                <input type="text" class="form-control" id="filter" placeholder="Filter Task">
+                <ul class="list-group mt-2" id='taskList'></ul>
+              <hr>
+                <input type="submit" class="btn btn-danger mt-2" value="Clear Task" id="clear">
+              </div>
+          </div>
+        </div>
+    
+    </div>
+  </div>
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
