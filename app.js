@@ -61,7 +61,7 @@ taskList.appendChild(list);
 function addTask(e){
   // if task is empty
 if(taskInput.value === ''){
-  alert("Add a task");
+  confirm("Add a task");
   }
 
 //Create list for tasks inputed
@@ -120,7 +120,7 @@ localStorage.setItem('tasks', JSON.stringify(tasks));
 // Remove tasks
 function removeTask(e){
   if(e.target.parentElement.parentElement.classList.contains('delete-item')){
-    if(confirm('Are you sure')){
+    if(confirm('Are you sure you want to delete task?')){
       e.target.parentElement.parentElement.parentElement.remove();
 
       removeFromLocalStorage(e.target.parentElement.parentElement.parentElement);
